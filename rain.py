@@ -10,7 +10,7 @@ def setup():
 def loop():
     try:
         while True:
-            if GPIO.input(RAIN_SENSOR_PIN) == 1:
+            if GPIO.input(RAIN_SENSOR_PIN) == 0:
                 print("No rain detected")
             else:
                 print("Rain detected!")
